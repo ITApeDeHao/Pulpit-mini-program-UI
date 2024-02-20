@@ -1,0 +1,85 @@
+.line-v {
+  width: 100%;
+  height: 10rpx;
+  background-color: #f4f4f4;
+}
+
+.d-text {
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  color: #262626;
+  font-size: 24rpx;
+}
+
+.content-v {
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  margin-top: 20rpx;
+  background-color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content-v .m {
+  text-align: center;
+  margin-top: 15rpx;
+  width: 214rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 20rpx;
+  border-radius: 5rpx;
+}
+
+.content-v .m .price {
+  padding-right: 6rpx;
+  font-size: 40rpx;
+}
+
+.un-select {
+  background-color: rgba(233, 125, 107, 0.15);
+  color: #262626;
+}
+
+.select {
+  background-color: #e97d6b;
+  color: white;
+}
+.other-v {
+  margin-left: 40rpx;
+  margin-top: 15rpx;
+   width: 214rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  border-radius: 5rpx;
+  justify-content: center;
+}
+.ds-v {
+  margin-left: 40rpx;
+  width: 670rpx;
+  background-color: #E97D6B;
+  border-radius: 5rpx;
+  color: white;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  bottom: 60rpx;
+}
+.input-v {
+    height: 100rpx;
+    margin-left: 14rpx;
+    width: 442rpx;
+    border-bottom: 2rpx solid #E97D6B;
+    margin-top: 15rpx;
+}
+.input-v input{
+  text-align: center;
+  height: 98rpx;
+  line-height: 98rpx;
+  width: 100%;
+  font-size: 40rpx;
+  color: #E97D6B;
+}

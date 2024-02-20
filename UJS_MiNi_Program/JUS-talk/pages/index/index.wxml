@@ -1,0 +1,113 @@
+<!--index.wxml-->
+<!-- 搜索框 -->
+<view class="index">
+    <searchInput></searchInput>
+</view>  
+<!-- 搜索框结束，轮播图开始 -->
+<view class="index_swiper">
+
+  <swiper autoplay interval="3000" circular indicator-dots indicator-color="#00ffff" indicator-active-color="#0000ff">
+  <swiper-item ><image src="/images/spider1.jpg" mode="widthFix" lazy-load="false"  /></swiper-item>
+  <swiper-item ><image src="/images/spider2.jpg" mode="widthFix" lazy-load="false"  /></swiper-item>
+  <swiper-item ><image src="/images/spider3.jpg" mode="widthFix" lazy-load="false"  /></swiper-item>
+</swiper>     
+</view>
+  <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange"></Tabs>
+ <view wx:if="{{index==2}}">
+  <scroll-view class="scroll" scroll-x="false" scroll-y="true" upper-threshold="50" lower-threshold="50" 
+    scroll-top="0" scroll-left="80" >
+    <view >
+<block  wx:for="{{attention_people}}"  wx:for-item='attention_id' wx:for-index="idx" wx:key="id">
+  <view class='item2' >
+  <view class='item4'>
+ <view class="shuxing">
+      姓名： {{attention_id.user_name}}
+ </view>
+ <button  data-index="{{attention_id.user_id}}"class="guanzhu" bindtap="clicktoattention" style="width: 25vw;height: 5vh;background-color: rgb(236, 226, 226);">
+   {{attention_id.is_attention}}</button>
+  </view>
+  <view class="item4">
+      <view class="content">
+      简介：{{attention_id.resume}}
+  </view>
+  </view>
+ </view>
+</block>
+<view wx:if="{{num1>limit1}}" bindtap="getConcernedPeople" class="center">
+  加载更多...
+</view>
+</view>
+  </scroll-view>
+</view>
+<view wx:elif="{{index==1}}" >
+    <scroll-view class="scroll" scroll-x="false" scroll-y="true" upper-threshold="50" lower-threshold="50" 
+    scroll-top="0" scroll-left="80" >
+    <view >
+<block  wx:for="{{post}}"  wx:for-item='post_id' wx:for-index="idx" wx:key="id">
+  <view bindtap="goto_detailpost" data-index="{{post_id.forum_id}}" class='newitem2'>
+  <view  class='item4'>
+ <view class="shuxing">
+      姓名： {{post_id.UserName}}
+ </view>
+  </view>
+  <view class="item4">
+      <view class="content">
+      <view class="text">简介：{{post_id.intro}}</view>
+     </view>
+     
+  </view>
+  <view class="shuxing_time">
+    {{post_id.time}}
+</view>
+ </view>
+ <view class="divLine"></view>
+</block>
+
+</view>
+<view wx:if="{{num>limit}}" bindtap="get_postInfor" class="center">
+  加载更多...
+</view>
+
+  </scroll-view>
+</view>
+<view wx:elif="{{index==0}}">
+  <scroll-view class="scroll" scroll-x="false" scroll-y="true" upper-threshold="50" lower-threshold="50" 
+  scroll-top="0" scroll-left="80" >
+  <view >
+<block  wx:for="{{lecture}}"  wx:for-item='lecture_id' wx:for-index="idx" wx:key="id">
+<view data-index="{{lecture_id.course_id}}" class='newitem2'>
+<view  class='item4'>
+<view class="shuxing">
+   课程名称： {{lecture_id.course_name}}
+</view>
+</view>
+<view class="item4">
+  <view class="shuxing_time">{{lecture_id.course_teacher}}</view>
+</view>
+<view class="item4">
+  <view class="shuxing">日期：{{lecture_id.course_data}}</view>
+</view>
+
+<view class="item4">
+    <view class="content">
+    <view class="text">腾讯会议号:{{lecture_id.course_url}}</view>
+   </view>
+  
+   
+</view>
+<view class="shuxing_time">
+  {{lecture_id.course_school}}
+</view>
+</view>
+<view class="divLine"></view>
+</block>
+
+</view>
+<view wx:if="{{num2>limit2}}" bindtap="get_lecture" class="center">
+加载更多...
+</view>
+</scroll-view>
+</view>
+  <!-- 轮播图结束 -->
+
+  

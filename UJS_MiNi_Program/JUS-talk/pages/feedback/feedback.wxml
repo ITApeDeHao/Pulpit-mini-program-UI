@@ -1,0 +1,6 @@
+
+
+<view class="container">
+  <!-- <image src='/images/background2.jpg'></image> -->
+  <button plain class='button'open-type='feedback'>意见反馈</button>
+</view>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": 
+  {
+    "searchInput":"../../components/searchInput/searchInput",
+    "Tabs":"../../components/Tabs/Tabs"
+  },
+  "navigationBarTitleText": "ujs学术讲座论坛"
+}

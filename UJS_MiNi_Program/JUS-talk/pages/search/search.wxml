@@ -1,0 +1,8 @@
+<!--pages/search/search.wxml-->
+<view class="index">
+  <searchInput></searchInput>
+  <text>
+    
+  </text>
+    
+</view>

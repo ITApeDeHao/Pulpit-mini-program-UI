@@ -1,0 +1,28 @@
+<!--pages/post_list/post_list.wxml-->
+<view >
+  <view class="none" wx:if="{{text==1}}">
+    <view class="shuxing">
+      暂无关注哦！
+    </view>
+  </view>
+  <view wx:elif="{{text==0}}">
+    <block  wx:for="{{attentionlist}}"  wx:for-item='attention_id' wx:for-index="idx" wx:key="id">
+  <view class='item2'bindtap="goto_detailPeople" data-index="{{attention_id.user_id}}">
+  <view class='item4'>
+ <view class="shuxing">
+    <view>
+        姓名： {{attention_id.UserName}}
+    </view>
+    <view>
+      简介：{{attention_id.resume}}
+    </view>
+ </view>
+
+  </view>
+  
+ </view>
+
+</block>
+  </view>
+
+</view>

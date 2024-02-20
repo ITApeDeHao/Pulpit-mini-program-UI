@@ -1,0 +1,182 @@
+page {
+  background-color: white;
+}
+
+.yl-text {
+  font-size: 28rpx;
+  color: #a2a2a2;
+  padding: 30rpx 40rpx 30rpx 40rpx;
+  height: 100rpx;
+  width: 670rpx;
+  background-color: white;
+}
+.holderCalss{
+  font-size: 28rpx;
+  color: #a2a2a2;
+}
+
+.tool-view {
+  margin-top: 50rpx;
+  width: 620rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  background-color: #f6f6f6;
+  margin-left: 40rpx;
+  border-radius: 5rpx;
+  padding: 25rpx;
+}
+
+.tool-view  .title {
+  font-size: 30rpx;
+  color: #333333;
+  height: 40rpx;
+  line-height: 40rpx;
+  width: 100%;
+}
+
+.option-view {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #f6f6f6;
+  margin-top: 15rpx;
+}
+
+.option-view  input {
+  color: #262626;
+  font-size: 26rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  width: 540rpx;
+  background-color: rgb(242, 242, 242);
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+}
+
+.option-view image {
+  padding-top: 13rpx;
+  padding-bottom: 13rpx;
+  padding-left: 45rpx;
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.add-option-view {
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  justify-content: center;
+  background-color: #f2f2f2;
+  align-items: center;
+  width: 100%;
+  margin-top: 50rpx;
+  border-radius: 2rpx;
+}
+
+.add-option-view image {
+  height: 20rpx;
+  width: 20rpx;
+}
+
+.add-option-view text {
+  font-size: 28rpx;
+  color: #8f8f8f;
+  margin-left: 15rpx;
+}
+.bottom-view{
+  margin-left: 40rpx;
+  width: 670rpx;
+  background-color: white;
+  margin-top: 100rpx;
+}
+.bottom-view .title-view {
+  width: 100%;
+  align-items: center;
+}
+.title-view image{
+  height: 25rpx;
+  width: 25rpx;
+}
+.title-view text{
+ font-size: 24rpx;
+ color: #231815;
+ margin-left: 10rpx;
+}
+.team-view{
+  width: 100%;
+  margin-top: 30rpx;
+  justify-content: space-around;
+}
+.team-view .item{
+  padding: 5rpx 30rpx 5rpx 30rpx;
+  border-radius: 5rpx;
+  text-align: center;
+  font-size: 22rpx;
+  border: 2rpx solid #E97D6B;
+}
+.item-s{
+  background-color: #E97D6B;
+  color: white;
+}
+.item-un-s{
+  background-color: white;
+  color: #E97D6B;
+}
+
+.float-view {
+  width: 750rpx;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.float-view .f-b-view{
+  width: 100%;
+  background-color: white;
+  border-top-left-radius: 24rpx;
+  border-top-right-radius: 24rpx;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  height: 444rpx;
+}
+.f-b-view .top-v {
+  background-color: #F4F4F4;
+  height: 100rpx;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 5rpx 13rpx rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+.f-b-view .top-v view{
+  height: 100rpx;
+  width: 140rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #262626;
+  font-size: 28rpx;
+}
+.f-b-view .top-v text{
+  font-size: 30rpx;
+  color: #262626;
+}
+.send-view {
+  width:670rpx;
+  padding: 25rpx 40rpx 30rpx 40rpx;
+  border-color: white;
+  border-bottom: 10rpx solid rgba(0, 0, 0, 0.05);
+}
+
+.send-view view{
+  width: 100rpx;
+  height: 50rx;
+  border-radius: 25rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 28rpx;
+}
+.send-view  .save{
+  background-color: white;
+  color: #E97D6B;
+  border: 2rpx solid #E97D6B;
+}

@@ -1,0 +1,58 @@
+<!-- <view class="login" style="background-image: url(https://s1.328888.xyz/2022/07/28/DrNhC.jpg);">
+  <button class="avatar-wrapper"  open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar" style="width: 180rpx;height:180rpx;background-image: url({{avatarUrl}});" >
+</button>
+<button class="tips" size="mini" bindtap="change">
+  立即登录
+</button>
+<input type="nickname" class="weui-input" placeholder="请输入昵称"/>
+</view>
+<view class="centercontent">
+</view> -->
+
+
+
+
+<view class="user_info_wrap">
+    <view wx:if="{{userinfo.avatarUrl}}" class="user_img_wrap">
+        <button class="avatar-wrapper"  open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar" style="width: 180rpx;height:180rpx;background-image: url({{avatarUrl}});" >
+        </button>
+    </view>
+    <view wx:else class="user_btn">
+      <navigator url="/pages/login/login"  class="tips" size="mini" bindtap="change" >登录</navigator>
+    </view>
+    <input type="nickname" class="weui-input" placeholder="请输入昵称"/>
+  </view>
+  <view class="user_content">
+    
+    <view class="user_main">
+      <!-- 历史足迹 -->
+      <view class="history_wrap">
+        <navigator>
+          <view class="his_num">0</view>
+          <view class="his_name">收藏的帖子</view>
+        </navigator>
+        <navigator>
+          <view class="his_num">0</view>
+          <view class="his_name">关注的人</view>
+        </navigator>
+        <navigator>
+          <view class="his_num">0</view>
+          <view class="his_name">我的足迹</view>
+        </navigator>
+      </view>
+    
+      <!-- 应用信息相关 -->
+      <view class="app_info_wrap">
+        <view class="app_info_item app_info_contact">
+          <text>联系客服</text>
+          <text>400-618-4000</text>
+        </view>
+        <navigator url="/pages/feedback/feedback" class="app_info_item">意见反馈</navigator>
+        <view class="app_info_item">关于我们</view>
+      </view>
+      <!-- 推荐 -->
+      <view class="recommend_wrap">
+        把应用推荐给其他人
+      </view>
+    </view>
+  </view>

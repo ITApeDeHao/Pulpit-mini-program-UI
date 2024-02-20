@@ -1,0 +1,39 @@
+<!--pages/detailed_post/detailed_post.wxml-->
+<view class="main">
+  <view class="body">
+    <view class="head">
+      <view class="headercon">
+        <view class="shuxing">
+          姓名： {{post.UserName}}
+     </view>
+         
+     </view>
+     
+     </view>
+     <view class="divLine">
+   
+    </view>
+    <scroll-view wx:if="{{num==1}}" class="scroll" scroll-x="false" scroll-y="true" upper-threshold="50" lower-threshold="50" 
+    scroll-top="0" scroll-left="80" >
+    <view >
+<block  wx:for="{{post.data}}"  wx:for-item='post_id' wx:for-index="idx" wx:key="id">
+  <view bindtap="goto_detailpost" data-index="{{post_id.forum_id}}" class='newitem2'>
+  <view class="item4">
+      <view class="content">
+      <view class="text">内容：{{post_id.forum_msg}}</view>
+     </view>
+  </view>
+ </view>
+ <view class="divLine"></view>
+</block>
+
+</view>
+
+
+  </scroll-view>
+   <view wx:if="{{num==0}}">
+       没有帖子哦~
+   </view>
+  </view>
+  </view>
+

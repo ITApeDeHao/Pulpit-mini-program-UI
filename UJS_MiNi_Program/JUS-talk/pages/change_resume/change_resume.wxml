@@ -1,0 +1,31 @@
+<!--pages/change_resume/change_resume.wxml-->
+<!--pages/changeusername/changeusername.wxml-->
+<view class="top-box">
+  <view>Hi</view>
+  <view class="next-text">欢迎使用！</view>
+</view>
+<!-- 登录、注册 -->
+<view class="center-box">
+  <view class="nav">
+   
+    <view class="right" >
+      <text>修改个人简介</text>
+    </view>
+  </view>
+ 
+  <!--  -->
+  <view class="input-box" >
+    <view class="wei-input">
+      <icon type="waiting" color="#44ADFB" size="16"></icon>
+      <input class="input" bindinput='resumeInputAction' auto-focus placeholder="请输入新的个人简介"/>
+    </view>
+  </view>
+  <view class="sumbit-btn">
+    <button class="button"  bindtap='changeing'
+    style="background-color: #33ccff;font-size: 30rpx;" 
+    type="primary">确认修改</button>
+  </view>
+</view>
+<!-- 重影 -->
+<view class="shadow shadow-1"></view><view class="shadow shadow-2"></view>
+<!-- 说明 -->

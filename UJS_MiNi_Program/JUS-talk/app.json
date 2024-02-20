@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/post_list/post_list",
+    "pages/search/search",
+    "pages/feedback/feedback",
+    "pages/release/releasePage",
+    "pages/release/vote/vote",
+    "pages/release/release",
+    "pages/release/title/title",
+    "pages/release/zhichi/zhichi",
+    "pages/release/selectCity/selectCity",
+    "pages/register/register",
+    "pages/mine/mine",
+    "pages/forget_pswd/forget_pswd",
+    "pages/set/set",
+    "pages/vip/vip",
+    "pages/changepassword/changepassword",
+    "pages/changeusername/changeusername",
+    "pages/detailed_post/detailed_post",
+    "pages/change_resume/change_resume",
+   "pages/detailed_people/detailed_people"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#408dfa",
+    "navigationBarTitleText": "ujs学术讲座论坛",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#81562b",
+    "backgroundColor": "#0000",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/home.png",
+        "selectedIconPath": "icons/homes.png"
+      },
+      {
+        "pagePath": "pages/post_list/post_list",
+        "text": "关注列表",
+        "iconPath": "icons/list.png",
+        "selectedIconPath": "icons/lists.png"
+      },
+      {
+        "pagePath": "pages/release/release",
+        "text": "新建",
+        "iconPath": "icons/new.png",
+        "selectedIconPath": "icons/new1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "icons/mine.png",
+        "selectedIconPath": "icons/mines.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

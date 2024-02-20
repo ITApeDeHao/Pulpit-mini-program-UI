@@ -1,0 +1,39 @@
+<!--pages/forget_pswd/forget_pswd.wxml-->
+<view class="top-box">
+  <view>Hi</view>
+  <view class="next-text">欢迎使用！</view>
+</view>
+<!-- 登录、注册 -->
+<view class="center-box">
+  <view class="nav">
+   
+    <view class="right" >
+      <text>短信验证码登录</text>
+    </view>
+  </view>
+ 
+  <!-- 注册 -->
+  <view class="input-box" >
+    <view class="wei-input">
+      <icon type="waiting" color="#44ADFB" size="16"></icon>
+      <input class="input" bindinput='phoneNumberInputAction' auto-focus placeholder="请输入手机号"/>
+    </view>
+    <view class="wei-input">
+      <icon type="waiting" color="#44ADFB" size="16"></icon>
+      <input bindinput='codeInputAction' class="input" auto-focus placeholder="请输入6位验证码"/>
+      <text class="input-code" bindtap="getCode">{{codeText}}</text>
+    </view>
+    
+  </view>
+  <view class="sumbit-btn">
+    <button class="button"  bindtap='logining'
+    style="background-color: #33ccff;font-size: 30rpx;" 
+    type="primary">立即登录</button>
+  </view>
+</view>
+<!-- 重影 -->
+<view class="shadow shadow-1"></view><view class="shadow shadow-2"></view>
+<!-- 说明 -->
+
+
+

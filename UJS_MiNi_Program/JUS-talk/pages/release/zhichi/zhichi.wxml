@@ -1,0 +1,18 @@
+<!--logs.wxml-->
+<view class="page-view">
+  <view class="line-v"></view>
+  <text class="d-text">请选择支持数量</text>
+  <view class="content-v page-row">
+    <block wx:for="{{dataList}}">
+      <text data-key="{{index}}" class="m {{selectedIndex == index ?'select':'un-select'}}" catchtap="itemClick"><text class="price">{{item}}</text>斤</text>
+    </block>
+  </view>
+  <view  class="page-row">
+    <view class="other-v {{selectedIndex == -1 ?'select':'un-select'}} page-row" catchtap="otherClick">其他</view>
+    <view hidden="{{selectedIndex != -1}}" class="input-v page-row">
+      <input bindinput="inputMoney" placeholder="请输入打赏金额" type="number"></input>
+    </view>
+  </view>
+
+  <view class="ds-v">{{dsText}}</view>
+</view>

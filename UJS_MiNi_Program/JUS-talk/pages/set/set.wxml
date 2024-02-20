@@ -1,0 +1,73 @@
+<view>
+    <view class="hr"></view>
+    <view  bindtap='change_username' class='item'>
+    <view class="title">修改用户名</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="line"></view>
+  
+  
+  <view bindtap="change_resume"  class='item'>
+    <view class="title">修改个人简介</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <view bindtap='change_changepassword' class='item'>
+    <view class="title">修改密码</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class='item'>
+    <view class="title">关于论坛与帮助</view>
+    <view class="detail2">
+      <text> ></text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="item">
+    <view class="title">更多</view>
+    <view class="detail2">
+      <text> ></text>
+    </view>
+  </view>
+  <!-- <view class="line"></view>
+  <view class="item">
+    <view class="title">退出登录</view>
+    <view class="detail2">
+      <text> ></text>
+    </view>
+  </view> -->
+  <view class="line"></view>
+  <view class="item">
+    <navigator class="title"hover-class="none" target="miniProgram" open-type="exit"> 退出当前小程序</navigator>
+    <view class="detail2">
+      <text> ></text>
+    </view>
+  </view>
+  <!-- <view class="line"></view>
+  <view class="item">
+    <view class="title">注销账号</view>
+    <view class="detail2">
+      <text> ></text>
+    </view>
+  </view> -->
+  <view class="hr"></view>
+
+</view>
+
+
+<view class='button' >
+    <button bindtap='loginOut' class='button1' hover-class="hover-class-1" >退出登录</button>
+    <button class='button1' hover-class="hover-class-1" >注销账号</button>
+</view>
+ 
+   
+    
+

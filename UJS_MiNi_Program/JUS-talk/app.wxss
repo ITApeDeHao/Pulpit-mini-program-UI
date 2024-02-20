@@ -1,0 +1,14 @@
+/**app.wxss**/
+@import "./styles/iconfont.wxss";
+page,view,text,swiper,swiper-item,image,navigator{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+page{
+/*主题颜色 变量*/
+    --themeColor:linear-gradient( #44ADFB,#5ed6fd);
+    
+    font-size: 37rpx;
+}

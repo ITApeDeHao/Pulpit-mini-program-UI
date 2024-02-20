@@ -1,0 +1,33 @@
+<view class="pageView">
+	<!-- <textarea bindinput="voteDesinput" placeholder-class="holderCalss" class="yl-text" placeholder="话题描述..."></textarea> -->
+		<view class="send-view page-row-r">
+			<view catchtap="beginSave" class="save">保存</view>
+		</view>
+		<view class="tool-view page-column">
+			<input bindinput="voteTitleInput" class="title" placeholder="请输入投票题目..."></input>
+			<block wx:for="{{optionList}}">
+				<view class="option-view page-row">
+					<input data-key="{{index}}" bindinput="optionInput" value="{{item.text}}" placeholder="请输入选项类容..."></input>
+					<image data-key="{{index}}" catchtap="deleteOptionClick" src="/images/release/delete.png"></image>
+				</view>
+			</block>
+			<view class="add-option-view page-row" catchtap="addOptionClick">
+				<image src="/images/release/vote_add.png"></image>
+				<text>添加选项</text>
+			</view>
+		</view>
+		<view class="bottom-view page-column">
+			<view class="title-view page-row">
+				<image src="/images/release/voteTime.png"></image>
+				<text>投票有效期</text>
+			</view>
+			<view class="page-row team-view">
+				<block wx:for="{{toolList}}">
+					<view data-key="{{index}}" class="item {{typeSelectIndex == index?'item-s':'item-un-s'}}" catchtap="typeClick">{{item}}</view>
+				</block>
+				<picker data-key="3" catchtap="typeClick" start="2020-01-01" end="2040-12-31" mode='date' bindchange='juYDateChange'>
+					<view class="item {{typeSelectIndex == 3 ?'item-s':'item-un-s'}}" bindchange="typeClick">{{zdyTime}}</view>
+				</picker>
+			</view>
+		</view>
+	</view>
